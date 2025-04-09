@@ -139,10 +139,11 @@ function removerItemCart(name){
 addressInput.addEventListener("input", function(event){
   let inputValue = event.target.value;
 
-  if(inputValue !== "")
-    addressInput.classList.remove("border-red-500")
+  if(inputValue !== "") {
+    addressInput.classList.remove("border-red-500");
     addressWarn.classList.add("hidden")
-})
+    }
+});
 //FINALIZAR PEDIDO
 checkoutBtn.addEventListener("click", function(){
    
